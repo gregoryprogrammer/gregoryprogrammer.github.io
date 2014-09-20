@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<div class="post">
+
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    <p class="meta">
+    	{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}
+    	| <a href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.url }}">Comments</a>
+    </p>
+  </header>
+
+  {% if page.playlink %}
+  <div class="gamelinks">
+    <a href="{{ site.url }}{{ page.playlink }}" class="playlink">PLAY GAME</a>
+  </div>
+  {% endif %}
+
+  <article class="post-content">
+  {{ content }}
+  </article>
+
+</div>
+
+{% include comments.html %}
+
+{% include comments_count.html %}

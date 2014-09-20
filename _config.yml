@@ -1,0 +1,20 @@
+# Site settings
+title: GREGORY PROGRAMMER
+email: gregoryprogrammer@gmail.com
+description: "Grzegorz Gwóźdź - notebook and portfolio."
+license: "&copy 2014 by Gregory Programmer"
+baseurl: ""
+imagesurl: "/data/images/"
+url: "http://gregoryprogrammer.com"
+
+twitter: gprogrammer
+github: gregoryprogrammer
+disqus: gregoryprogrammer
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+highlighter: pygments
+permalink: /posts/:year/:month/:day/:title/
+include: ['_pages']

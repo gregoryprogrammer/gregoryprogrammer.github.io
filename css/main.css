@@ -1,0 +1,505 @@
+/* Base */
+/* ----------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body { height: 100%; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font: 16px/22px "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  color: #3B3B3B;
+  background: #ddd;
+  line-height: 1.5;
+  text-align:justify;
+}
+
+body:before { 
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+  box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+
+a, a:hover, a:visited { 
+  color: #215182;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li {margin-bottom: 4px; }
+
+.line {
+  border-bottom: 2px dashed #444;
+}
+
+/* Utility */
+
+.wrap:before,
+.wrap:after { content:""; display:table; }
+.wrap:after { clear: both; }
+.wrap {
+  max-width: 800px;
+  padding: 0 30px;
+  margin: 0 auto;
+  zoom: 1;
+}
+
+/* Layout Styles */
+/* ----------------------------------------------------------*/
+
+.page-content {
+  padding: 10px;
+  padding-bottom: 120px;
+}
+
+/* Site header */
+
+.site-header {
+  border-bottom: 3px solid #333;
+  min-height: 56px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.site-title a,
+.site-title:hover a,
+.site-title:visited a {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3.0em;
+  font-weight: bold;
+  color: #2d2d2d;
+  letter-spacing: -1px;
+  line-height: 56px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  padding: 0px;
+}
+
+
+.site-nav {
+  font-size: 1.4em;
+  float: right;
+  line-height: 56px;
+  letter-spacing: 0.25em;
+  padding: 4px;
+}
+
+.site-nav .menu-icon { display: none; }
+
+.site-nav .page-link a {
+  color: #2d2d2d;
+  background: #ccc;
+  letter-spacing: 0.025em;
+  padding: 8px 8px 8px 8px;
+}
+
+.site-nav .page-link a:hover {
+  letter-spacing: 0.025em;
+  padding: 4px 4px 4px 4px;
+  border: 4px solid #3497c5;
+}
+
+.site-nav .page-link-current a {
+  color: #fff;
+  background: #3497c5;
+  padding: 8px 8px 8px 8px;
+  letter-spacing: 0.025em;
+}
+/* Site footer */
+
+.site-footer {
+  border-top: 2px solid #333;
+  height: 120px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.site-footer p {
+  font-size: 15px;
+  letter-spacing: -.3px;
+  color: #2d2d2d;
+}
+
+/* icons, such as: github, twitter, rss etc */
+/* ----------------------------------------------------------*/
+
+.big-icon {
+  font-size: 4.0em;
+}
+
+.icon a,
+.icon a:visited,
+.icon a:hover {
+  font-size: 2.5em;
+  color: #2d2d2d;
+  letter-spacing: -0.01em;
+  padding: 4px;
+}
+
+/* posts */
+
+.posts .post-date {
+  display: block;
+  font-family: "Dejavu Sans Mono", "Courier New";
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #555;
+}
+
+.posts .post-date a {
+  font-weight: normal;
+}
+
+.posts .post-date-blog {
+  font-family: "Dejavu Sans Mono", "Courier New";
+  font-size: 0.8em;
+  color: #555;
+}
+
+a.read-more {
+  background: #3497c5;
+  color: #fff;
+  padding: 8px;
+}
+
+a.read-more:hover {
+  background: #3497c5;
+  color: #333;
+  padding: 8px;
+}
+
+.post-link a,
+.post-link a:visited,
+.post-link a:hover
+{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2.2em;
+  color: #3B3B3B;
+  line-height: 1;
+}
+
+
+.post-link-blog a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #3B3B3B;
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.post-link-blog a:hover {
+  background: #3b3b4b;
+  color: #fff;
+  padding: 4px;
+}
+
+
+.post-blog {
+  margin-bottom: 6px;  
+}
+
+
+.post { 
+  margin: 30px 1% 30px;
+  background: #ddd;
+}
+
+.post-header { margin: 10px 0 30px; }
+
+.post-header h1 {
+  font-family: 'Fjalla One', sans-serif;
+
+  font-size: 42px;
+  letter-spacing: -1.75px;
+  line-height: 1;
+  font-weight: 300;
+
+  font-size: 2.5em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  border-bottom: 1px solid #BBB;
+  margin-top: 12px;
+}
+
+.post-header .meta {
+  font-family: "Dejavu Sans Mono", "Courier New";
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #555;
+}
+
+.meta a {
+  font-weight: normal;
+}
+
+.post-content { margin: 0 0 30px; }
+
+.post-content > * { margin: 20px 0; }
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  line-height: 1;
+  font-weight: 300;
+  margin: 40px 0 20px;
+}
+
+.post-content h2 {
+  font-size: 32px;
+  letter-spacing: -1.25px;
+}
+
+.post-content h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: 1px solid #aaa;
+}
+
+.post-content h4 {
+  font-size: 20px;
+  letter-spacing: -1px;
+}
+
+.post-content blockquote {
+  border-left: 4px solid #e8e8e8;
+  padding-left: 20px;
+  font-size: 18px;
+  opacity: .6;
+  letter-spacing: -1px;
+  font-style: italic;
+  margin: 30px 0;
+}
+
+.post-content ul,
+.post-content ol { padding-left: 20px; }
+
+.post .post-below {
+  padding-top: 12px;
+}
+
+.post pre,
+.post code {
+  background-color: #eef;
+  padding: 8px 12px;
+  font-size: 15px;
+}
+
+.post code { padding: 1px 5px; }
+
+.post ul,
+.post ol { margin-left: 1.35em; }
+
+.post pre code { border: none; }
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code { background-color: #333; }
+
+/* games descriptions */
+
+.games {
+  width: 100%;
+}
+
+.game {
+  clear: both;
+}
+
+.game-left img {
+  margin-left: 0px;
+}
+
+.game-right img {
+  margin-right: 0px;
+}
+
+.game-image {
+  width: 45%;
+}
+
+.game-description {
+  width: 45%;
+}
+
+.game-left .game-description {
+  float: right;
+  margin-right: 1%;
+}
+
+.game-right .game-description {
+  float: left;
+  margin-left: 1%;
+}
+
+.game-left .game-image {
+  float: left;
+}
+
+.game-right .game-image {
+  float: right;
+}
+
+.game-between {
+  font-size: 2.5em;
+  clear: both;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.gamelinks {
+}
+
+a.playlink {
+  background: #008C82;
+  color: #fff;
+  padding: 8px 8px 8px 8px;
+}
+
+a.playlink:hover {
+  background: #008C82;
+  color: #333;
+  padding: 8px 8px 8px 8px;
+}
+
+
+img {
+  -webkit-box-shadow: 3px 3px 16px 0px rgba(50, 50, 50, 0.8);
+  -moz-box-shadow:    3px 3px 16px 0px rgba(50, 50, 50, 0.8);
+  box-shadow:         3px 3px 16px 0px rgba(50, 50, 50, 0.8);
+}
+
+.post-content img {
+  width: 48%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+/* games swf */
+
+.game-swf {
+  border: 14px solid #ccc;
+  padding: 14px 14px 14px 14px;
+}
+
+
+/* media queries */
+/* ----------------------------------------------------------*/
+
+@media screen and (max-width: 750px) {
+
+  .footer-col-1 { width: 50%; }
+
+  .footer-col-2 {
+    width: 45%; /*fallback*/
+    width: -webkit-calc(50% - 10px);
+    width: -moz-calc(50% - 10px);
+    width: -o-calc(50% - 10px);
+    width: calc(50% - 10px);
+    margin-right: 0;
+  }
+
+  .site-footer .column.footer-col-3 {
+    width: auto;
+    float: none;
+    clear: both;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .wrap { 
+    padding: 0 12px;
+  }
+
+  .site-nav {
+    position: fixed;
+    z-index: 10;
+    top: 14px; right: 8px;
+    background-color: white;
+    border: 1px solid #e8e8e8;
+  }
+
+  .site-nav .menu-icon {
+    font-size: 1.0em;
+    display: block;
+    color: #505050;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  .site-nav .menu-icon svg { width: 18px; height: 16px; }
+
+  .site-nav .trigger {
+    clear: both;
+    margin-bottom: 5px;
+    display: none;
+  }
+
+  .site-nav:hover .trigger { 
+    display: block;
+  }
+
+  .site-nav .page-link-current,
+  .site-nav .page-link {
+    display: block;
+    text-align: right;
+    line-height: 1.25;
+    padding: 5px 10px;
+    margin: 0;
+  }
+
+  .post-header h1 { font-size: 36px; }
+  .post-content h2 { font-size: 28px; }
+  .post-content h3 { font-size: 22px; }
+  .post-content h4 { font-size: 18px; }
+  .post-content blockquote { padding-left: 10px; }
+  .post-content ul,
+  .post-content ol { padding-left: 10px; }
+
+  .site-footer .column {
+    float: none;
+    clear: both;
+    width: auto;
+    margin: 0 0 15px; }
+
+}
