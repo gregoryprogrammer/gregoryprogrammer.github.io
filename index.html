@@ -1,37 +1,48 @@
 ---
-layout: default
+layout: page
+mainmenu: false
 ---
 
-<div class="posts">
+<div class="games">
+{% for post in site.tags.game %}
 
-    {% assign posts = (site.posts) | where: "tag", !"game" %}
-    {% for post in posts %}
+		<div class="game">
 
-    <div class="post">
-        <span class="post-link">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </span>
+			{% capture column %}{{ forloop.index0 | modulo:2 }}{% endcapture %}
+			
+			{% if column == '0' or forloop.first %}
+			<!-- <div class="game-col-1"> -->
+			<div class="game-left">
+			{% endif %}
+			
+			{% if column == '1' or forloop.last %}
+			<div class="game-right">
+			<!-- <div class="game-col-2"> -->
+			{% endif %}
+			
+			<a href="{{ post.url }}"> <img class="game-image" src="{{ site.imagesurl | prepend: site.baseurl}}{{ post.image }}" /> </a>
 
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}
-                | <a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
-        </span>
+				<div class="game-description">
+					<span class="post-link"> <a href="{{ post.url }}">{{ post.title }}</a> </span>
+					<p>{{ post.excerpt }}</p>
 
-        {{post.excerpt}}
+					<div class="post-below">
+						<a href="{{ site.url | prepend: site.baseurl }}{{ post.playlink }}" class="playlink">PLAY GAME</a>
+						<a href="{{ post.url }}" class="read-more">Read more</a>
+					</div>
+				</div>
 
-        <div class="post-below">
-            <a href="{{ post.url }}" class="read-more">
-                Read more
-            </a>
-        </div>
-    </div>
+			</div>
 
-    {% if forloop.last == false %}
-    <div class="line"></div>
-    {% endif %}
+		</div> <!-- game -->
 
-    {% endfor %}
+		<div class="game-between">
+		{% if forloop.last == false %}
+		<div class="line"></div>
+		{% endif %}
+		</div>
 
+
+{% endfor %}
 </div>
-
-{% include comments_count.html %}
 
