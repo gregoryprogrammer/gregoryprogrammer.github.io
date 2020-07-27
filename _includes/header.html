@@ -29,32 +29,5 @@
             </a>
         </span>
 
-        <nav class="site-nav">
-            <a href="#" class="menu-icon">
-
-                <i class="fa fa-bars"></i>
-            </a>
-            <div class="trigger">
-
-                {% assign current_page_title = page.title %}
-                {% if page.url == "/" or page.url == "/index.html" %}
-                    {% assign current_page_title = "Home" %}
-                {% endif %}
-
-                {% assign pages = site.pages | where: "layout" , "page" | where: "mainmenu", true %}
-                {% for page in pages %}
-
-                    {% if page.title == current_page_title%}
-                    <span class="page-link-current">
-                    {% else %}
-                    <span class="page-link">
-                    {% endif %}
-
-                    <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-                    </span>
-                    {% endfor %}
-
-            </div>
-        </nav>
     </div>
 </header>

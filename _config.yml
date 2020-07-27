@@ -1,7 +1,7 @@
 # Site settings
 title: GREGORY PROGRAMMER
 email: gregoryprogrammer@gmail.com
-description: "Grzegorz Gwóźdź - notebook and portfolio."
+description: "Grzegorz Gwóźdź - portfolio."
 license: "&copy 2014 by Gregory Programmer"
 baseurl: ""
 imagesurl: "/data/images/"
