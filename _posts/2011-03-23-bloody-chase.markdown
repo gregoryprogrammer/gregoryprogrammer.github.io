@@ -5,7 +5,7 @@ date: 2011-03-23
 categories: game
 tag: game
 image: screens/bloody_chase-screen_03.png
-playlink: /games/bloody-chase
+playlink: https://gregoryprogrammer.itch.io/bloody-chase
 ---
 
 Unstoppable running vampire.

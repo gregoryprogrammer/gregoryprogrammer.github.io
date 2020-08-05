@@ -5,7 +5,7 @@ date: 2013-08-30
 categories: game
 tag: game
 image: screens/bloody_climber-screen_03.png
-playlink: /games/bloody-climber
+playlink: https://gregoryprogrammer.itch.io/bloody-climber
 ---
 
 Crazy platformer where except climbing you have to avoid deadly blades.

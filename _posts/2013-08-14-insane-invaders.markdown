@@ -5,12 +5,12 @@ date: 2013-08-14
 categories: game
 tag: game
 image: screens/insane_invaders-screen_01.png
-playlink: /games/insane-invaders
+playlink: https://gregoryprogrammer.itch.io/insane-invaders
 ---
 
 Game made in 12 hours with Flash technology.
 It looks very simple but the main goal was to carry out some idea to the end in short time.
-You can find this game on many websites with flash games or you can watch a [video][video] of the gampeplay.
+You can find this game on many websites with flash games or you can watch a [video][video] of the gameplay.
 
 Design of this shooter was inspired by the classic Space Invaders.
 Like in my other flash games I used [Flixel][flixel] as a framework and Gimp to prepare some graphics.
