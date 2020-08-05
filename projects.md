@@ -29,7 +29,7 @@ permalink: /projects/
 					<p>{{ post.excerpt }}</p>
 
 					<div class="post-below">
-						<a href="{{ site.url | prepend: site.baseurl }}{{ post.playlink }}" class="playlink">PLAY GAME</a>
+						<a href="{{ post.playlink }}" class="playlink">PLAY GAME</a>
 						<a href="{{ post.url }}" class="read-more">Read more</a>
 					</div>
 				</div>
